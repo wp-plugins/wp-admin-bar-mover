@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Admin Bar Left
+   ========================================================================== */
+
+html {
+	margin-top: 0 !important;
+}
+
+/* confine to small block */
+
+#wpadminbar {
+	min-width: 52px;
+	width: 204px;
+	right: auto;
+	left: 0;
+}
+
+/* break horizontal alignment */
+
+#wpadminbar .wp-admin-bar-top-secondary,  #wpadminbar .ab-top-secondary,  #wpadminbar ul li:last-child, #wpadminbar ul li:last-child .ab-item {
+	display: block;
+	float: none;
+	text-align: left;
+	min-width: 52px;
+	width: 204px;
+}
+
+#wpadminbar li {
+	float: none;
+}
+
+/* hide the search bar */
+
+#wpadminbar #wp-admin-bar-search {
+	display: none;
+}
+
+/* add background and force non-WP items into correct width */
+
+#wpadminbar .quicklinks>ul>li>a {
+	background-color: #000;
+	background: rgba(0,0,0,0.85);
+}
+
+/* make subnav items push the other items down */
+
+#wpadminbar .hover .ab-sub-wrapper {
+	float: none;
+	display: block;
+	position: relative;
+	top: 0;
+	right: 0;
+	left: auto;
+	min-width: 52px;
+	width: 204px;
+}
+
+/* fix avatar alignment on webkit browsers */
+
+ #wpadminbar #wp-admin-bar-my-account.with-avatar>a img {
+	position: relative;
+	top: 10px;
+  	right: 5px;
+}
+
+@media screen and (min-width: 783px) {
+
+/* force non-WP items into correct width */
+
+	 #wpadminbar .quicklinks>ul>li>a {
+		width: 189px;
+		max-width: 189px;
+		overflow: hidden;
+	}
+	
+}
+
+@media screen and (max-width: 782px) {
+
+/* fix widths for mobile devices */
+
+	 #wpadminbar {
+		width: 52px;
+	}
+
+/* push subnavs to the right on mobile devices */
+
+	  #wpadminbar .hover .ab-sub-wrapper {
+		float: none;
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 52px !important;
+		right: auto !important;
+		width: 80% !important;
+	}
+	
+/* kill third-party items on mobile */
+
+	 #wp-toolbar>ul>li {
+		display: none !important;
+	}
+
+/* show WP default items on mobile */
+
+	 #wpadminbar li#wp-admin-bar-comments,  #wpadminbar li#wp-admin-bar-edit,  #wpadminbar li#wp-admin-bar-menu-toggle,  #wpadminbar li#wp-admin-bar-my-account,  #wpadminbar li#wp-admin-bar-my-sites,  #wpadminbar li#wp-admin-bar-new-content,  #wpadminbar li#wp-admin-bar-site-name,  #wpadminbar li#wp-admin-bar-updates,  #wpadminbar li#wp-admin-bar-wp-logo {
+		display: block !important;
+	}
+
+/* force items to stay at navbar width */
+
+	#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks>ul>li>a {
+		width: 52px;
+	}
+
+	html #wpadminbar {
+		min-width: 52px;
+	}
+
+}

@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Admin Bar Hidden
+   ========================================================================== */
+
+@media screen and (min-width: 783px) {
+
+	#wpadminbar {
+		opacity: 0.1;
+		transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-o-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+	}
+
+	#wpadminbar:hover {
+		opacity: 1;
+	}
+
+}

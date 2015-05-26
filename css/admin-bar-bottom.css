@@ -1,0 +1,30 @@
+/* ==========================================================================
+	Admin Bar Bottom
+========================================================================== */
+
+html {
+	margin-top: 0 !important;
+}
+
+#wpadminbar {
+	bottom: 0;
+	top: auto;
+	position: fixed;
+}
+
+#wpadminbar .ab-sub-wrapper {
+	bottom: 32px;
+	top: auto;
+}
+
+#wpadminbar #wp-admin-bar-my-account.with-avatar>a img {
+	position: relative;
+	top: 10px;
+	right: 5px;
+}
+
+@media screen and (max-width: 782px) {
+	#wpadminbar .ab-sub-wrapper {
+		bottom: 46px;
+	}
+}
