@@ -54,12 +54,6 @@ While our plugin does support moving the admin bar to different areas of the scr
 
 Only administrators. Anyone editor level or down does not have the ability to change this item. This should allow you to use this on your sites which have subscriber through editor level access and modernize your user experience!
 
-== Screenshots ==
-
-1. assets/screenshot-left.jpg
-2. assets/screenshot-bottom.jpg
-3. assets/screenshot-right.jpg
-
 == Changelog ==
 
 = 1.0 =
