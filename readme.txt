@@ -17,14 +17,14 @@ Fix your headaches with the admin bar overlapping your fixed top nav or distorti
 This plugin also supports responsive views of the Wordpress Admin Bar for mobile views. Note that the hover transparency is intentionally disabled for screen widths under 782px due to lack of hover states on most mobile devices.
 
 Admin Bar Positions
-* Top (default)
-* Right
-* Left
-* Bottom
+1. Top (default)
+2. Right
+3. Left
+4. Bottom
 
 Admin Bar Transparencies
-* Hidden (transparent until hover)
-* Not Hidden (default)
+1. Hidden (transparent until hover)
+2. Not Hidden (default)
 
 Read more or learn about our company @ <a href="http://rangemarketing.com/">http://rangemarketing.com/</a>
 
